@@ -83,6 +83,7 @@ const BLOCKS = {
         fire: 2,
         water: 35,
         electricity: 41,
+        enemies: 7
     },
     climb_blocks: _ => BLOCKS.cl,
     cl: { //Climbable

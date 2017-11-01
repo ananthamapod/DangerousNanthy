@@ -25,7 +25,7 @@ gulp.task('js', (cb) => {
     [
       gulp.src(srcs.JS),
       babel({
-        presets: ['es2015', 'stage-0']
+        presets: ['env']
       }),
       uglify(),
       gulp.dest(dests.JS)
