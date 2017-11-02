@@ -4,7 +4,8 @@
   "description": "Explore the adventures of nanthy as he goes through ten levels of adventures with guns, fire, jetpacks, enemies and more!",
   "main": "package/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/gulp"
   },
   "node-remote": "http://localhost:5000",
   "window": {
