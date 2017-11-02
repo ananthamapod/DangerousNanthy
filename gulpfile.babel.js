@@ -56,7 +56,7 @@ gulp.task('watch', _ => {
 gulp.task('connect', _ => {
   connect.server({
     root: './',
-    port: 5000
+    port: process.env['PORT'] || 5000
   })
 })
 
