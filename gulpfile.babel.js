@@ -25,7 +25,10 @@ gulp.task('js', (cb) => {
     [
       gulp.src(srcs.JS),
       babel({
-        presets: ['env']
+        presets: ['env'],
+        plugins: [
+          ["transform-object-rest-spread", { "useBuiltIns": true }]
+        ]
       }),
       uglify(),
       gulp.dest(dests.JS)
